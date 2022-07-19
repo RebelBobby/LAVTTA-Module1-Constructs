@@ -1,32 +1,31 @@
+//Joseph Matulewicz
+
 using System;
 
-// namespace declaration
-namespace HelloWorldApp {
-	
-	// Class declaration
-	class Program {
-		
-		// Main Method
-		static void Main(string[] args) {
+namespace SimpleConsoleIOapp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("**** Basic IO ****");
+            GetUserData();
+            Console.WriteLine();
 
-			Console.WriteLine("****Basic IO ****");
-			GetUserData();
-			Console.ReadLine();
+            Console.ReadLine();
 
-			static void GetUserData()
-			{
-				Console.Write("Enter your name: ");
-				string userName = Console.Readline();
-				Console.Write("Enter your age: ");
-				string userAge = Console.ReadLine();
+            static void GetUserData()
+            {
+                Console.Write("Enter your name: ");
+                string userName = Console.ReadLine();
+                Console.Write("Enter your age: ");
+                string userAge = Console.ReadLine();
 
-				//Echo to the console
-				Console.WriteLine("Hello {0}! You are {1} years old.", userName, userAge);
-			}
-
-		}
-
-	}
-
+                Console.WriteLine("Hello {0}! You are {1} years old.", userName, userAge);
+            }
+        }
+    }
 }
-	
+//joeM branch checkout
+// git remote add origin main https://github.com/FastLaneUS/LAVTTA-Module1-Constructs.git
+// https://github.com/FastLaneUS/LAVTTA-Module1-Constructs.git
